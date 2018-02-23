@@ -15,27 +15,47 @@ press nuke in top right to erase the polypaint and flood the current subtool wit
 
 Installation:
 -extract the "Spiraloid" folder in this location.  C:\Program Files\Pixologic\ZBrush 4R8\ZStartup\Macros\
+
 -restart zbrush.
+
 -Press menu macros > "Reload all Macros".
+
 -Press menu macros > Spiraloid > "_______________Install_______________"  button at the bottom.
+
 -Press preferences > Config > "Store Config" (assuming you want to keep using it after restarting ZB)
+
 -Press preferences > Hotkeys > "Store Hotkeys" (assuming you want to keep using it after restarting ZB)
+
 
 
 Caveats:
 
+
 changes from the default hotkeys:
 
 ctrl d : deselects mask
+
 ctrl h : hides mask
+
 ctrl i : inverts mask
+
 shift c : frames tool
+
 ctrl e : merges subtool down.
+
 shift F :  toggles wireframe and solo at the same time. super useful for live boolean object editing.
+
 f : toggle wireframe
+
 1 : flat shade
+
 2 : preview render 
+
 3 : render 
+
 4 : clay shade 
+
 5 : pewter shade 
+
 6 : toon shade 
+
