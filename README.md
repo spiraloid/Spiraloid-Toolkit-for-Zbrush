@@ -3,9 +3,11 @@ Custom UI, hotkeys and colors for Zbrush 4R8
 
 
 WARNING:
+
 this is my personal workflow setup, no support, liability or warranty should be assumed.  I'm just sharing my setup.  if it breaks yours.  bummer.  be warned.
 
 Usage:
+
 this creates a spiraloid menu that is bound the "u" hotkey.  
 I suggest mapping this key to the right click on your mouse and wacom pen.  
 once installed, you should never have to press zadd mrgb etc.  if you do, it's still availiable on right click or spacebar.
