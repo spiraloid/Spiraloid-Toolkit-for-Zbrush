@@ -9,9 +9,12 @@ this is my personal workflow setup, no support, liability or warranty should be 
 Usage:
 
 this creates a spiraloid menu that is bound the "u" hotkey.  
-I suggest mapping this key to the right click on your mouse and wacom pen.  
-once installed, you should never have to press zadd mrgb etc.  if you do, it's still availiable on right click or spacebar.
+I suggest mapping this key to the back button on your mouse and a wacom pen side button. 
+
+once installed, you should never have to press zadd mrgb etc.  if you need to, it's still availiable on right click or spacebar.
+
 press setup in top right each time you open a project to reset camera behavior, initialize settings and activates a timelapse recording.
+
 press nuke in top right to erase the polypaint and flood the current subtool with 50% gray and material.
 
 
@@ -32,6 +35,7 @@ Installation:
 
 Caveats:
 
+everybutton is a macro with varying levels of zScripting in them and has been tuned from years of use.
 
 changes from the default hotkeys:
 
