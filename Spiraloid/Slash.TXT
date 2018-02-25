@@ -36,7 +36,6 @@
 [ISet,Stroke:LazyStep,0.01]
 [ISet,Stroke:LazyRadius,1]
 [ISet,Stroke:Mouse Avg,7]
-[IUnPress,Stroke:LazyMouse]
 
 [IPress,Brush:Tablet Pressure:Use Global Settings]
 [IUnPress,Brush:Tablet Pressure:Use Global Settings]
@@ -78,10 +77,20 @@ H3V8EH1V8EHV8EHV8DHV8CHV8BHV8AHV89HV88HV87HV86HV85HV84HV83H-1V83H-1V82H-1V81H-1V
 [ISet,Brush:Modifiers:Brush Modifier,100]
 [ISet,Brush:Curve:Edit Curve:Offset,-0.13333]
 [ISet,Preferences:Tablet:Size Sensitivity,1]
-[ISet,Draw:Draw Size,16]
+[ISet,Draw:Draw Size,50]
 [ISet,Preferences:Tablet:Lazy Pressure,0.2]
 
+[ISet,Stroke:LazyRadius,25]
+[ISet,Preferences:Tablet:Lazy Pressure,0.15]
+[ISet,Stroke:LazyRadius,7]
 
+[ISet,Preferences:Tablet:Size Sensitivity,0]
+[IClick,Brush:Tablet Pressure:Size]
+[IPress,Brush:Tablet Pressure:Size:Reset]
+
+
+[IPress,Brush:Tablet Pressure:Size:Reset]
+[ISet,Brush:Tablet Pressure:Size:Focal Shift,59]
 
 //[IPress,Draw:Rgb]
 //[IColorSet,0,0,0]
