@@ -1,6 +1,7 @@
 # Spiraloid-Toolkit-for-Zbrush
 Custom UI, hotkeys and colors for Zbrush 4R8
 
+https://spiraloid.github.io/Spiraloid-Toolkit-for-Zbrush/
 
 WARNING:
 
