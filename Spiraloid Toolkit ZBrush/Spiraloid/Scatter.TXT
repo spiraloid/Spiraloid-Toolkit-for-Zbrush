@@ -1,0 +1,38 @@
+﻿//ZBRUSH MACRO - Recorded in ZBrush version 4.0
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.0]
+
+[IPress,Brush:Standard]
+
+[IShowActions,0]
+[IPress,Brush:Tablet Pressure:Use Global Settings]
+[ISet,Preferences:Tablet:Color Sensitivity,1]
+[ISet,Preferences:Tablet:Size Sensitivity,0]
+[ISet,Preferences:Tablet:Lazy Pressure,1]
+
+[IUnPress,Stroke:LazyMouse]
+
+[ISet,Stroke:Placement,0.33871]
+[ISet,Stroke:Flow,0.04838]
+[ISet,Stroke:Placement,0.19354]
+[ISet,Stroke:Color,0]
+
+[IPress,Stroke:Spray]
+[ISet,Alpha:Noise,29]
+[ISet,Alpha:Blur,-15]
+[IPress,Alpha:Alpha 23]
+[IPress,Alpha:Aa]
+
+//setup 
+[IUnPress,Draw:M]
+[IUnPress,Draw:Zadd]
+[IUnPress,Draw:Zsub]
+[IPress,Draw:Rgb]
+[IKeyPress,SHIFT,[IUnPress,Draw:Zadd]]
+[IKeyPress,SHIFT,[IPress,Draw:Rgb]]
+[ISet,Draw:Rgb Intensity,7]
+[ISet,Draw:Draw Size,33]
+[ISet,Draw:Focal Shift,0]
+
+]
