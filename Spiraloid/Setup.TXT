@@ -50,4 +50,8 @@
 // turn on constant depth picking for surface curves
 [IPress,Picker:Cont Z]
 
+// enable right click camera
+[IPress,Preferences:Interface:RightClick Navigation]
+[IUnPress,Preferences:Interface:Enable RightClick Popup]
+
 ]
