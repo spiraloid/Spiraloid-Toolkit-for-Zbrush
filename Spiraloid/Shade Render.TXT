@@ -11,5 +11,6 @@
 [ISet,Render:BPR AO:Blur,15]
 [ISet,Render:BPR AO:Res,256]
 [ISet,Render:BPR Shadow:Res,512]
+[IPress,Tool:Polypaint:Colorize]
 [IPress,Render:Best]
 ]
