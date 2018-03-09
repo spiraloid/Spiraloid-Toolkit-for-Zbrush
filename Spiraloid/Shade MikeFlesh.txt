@@ -6,7 +6,6 @@
 [IColorSet,256,256,256]
 [IPress,Render:Preview]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\MatCap MikeFlesh.ZMT"][IPress,Material:Load]
-[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting.ZLI"][IPress,Light:Load]
 [IUnPress,Tool:Polypaint:Colorize]
 
 ]

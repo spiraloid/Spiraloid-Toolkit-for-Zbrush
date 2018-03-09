@@ -2,6 +2,8 @@
 [IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
 [IShowActions,0]
 [IConfig,4.0]
+[IFreeze,	
+
 [IPress,Brush:Slash3]
 [IPress,Brush:DamStandard]
 [IUnPress,Brush:Tablet Pressure:Use Global Settings]
@@ -17,7 +19,6 @@
 
 
 [ISet,Draw:Focal Shift,0]
-[ISet,Draw:Draw Size,20]
 [ISet,Draw:Z Intensity,30]
 
 
@@ -52,7 +53,6 @@
 [ISet,Brush:Modifiers:Brush Modifier,100]
 [ISet,Brush:Curve:Edit Curve:Offset,-0.13333]
 [ISet,Preferences:Tablet:Size Sensitivity,1]
-[ISet,Draw:Draw Size,50]
 [ISet,Preferences:Tablet:Lazy Pressure,0.2]
 
 [ISet,Stroke:LazyRadius,25]
@@ -81,4 +81,8 @@ H-EVE7H-FVE7H-10VE7H-10VE7)]
 //[IColorSet,256,256,256]
 //[IPress,Color:SwitchColor]
 
+//[ISet,Draw:Draw Size,50]
+
+
+]//end freeze
 ]

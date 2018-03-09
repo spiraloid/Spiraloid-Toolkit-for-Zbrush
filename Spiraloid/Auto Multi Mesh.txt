@@ -1,0 +1,17 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.8
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.8]
+[IPress,Tool:Geometry:s.Apply]
+[IPress,Tool:Geometry:Del Lower]
+[IPress,Tool:SubTool:Duplicate]
+[FileNameSetNext,"C:\Users\Public\Documents/ZBrushData/Temp/objIn.goz"][IPress,Tool:Geometry:ZRemesher]
+[IPress,Tool:Geometry:Divide]
+[IPress,Tool:Geometry:Divide]
+[IPress,Tool:Geometry:Divide]
+[IPress,Draw:Mrgb]
+[ISet,Tool:SubTool:ProjectionShell,0.01094]
+[IPress,Tool:SubTool:ProjectAll]
+[IPress,Tool:SubTool:SelectUp]
+[IPress,Tool:SubTool:Delete]
+]
