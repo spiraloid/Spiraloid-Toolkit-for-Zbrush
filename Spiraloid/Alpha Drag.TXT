@@ -3,7 +3,15 @@
 [IShowActions,0]
 [IConfig,2018]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\AlphaDrag.ZBP"][IPress,Brush:Load Brush]
-[IPress,Spiraloid]
-[ISet,Draw:  Z Intensity,50]
+
+//setup 
+[IUnPress,Draw:Mrgb]
+[IUnPress,Draw:Rgb]
+[IUnPress,Draw:M]
+[IPress,Draw:Zsub]
+
 [ISet,Draw:  Z Intensity,55]
+
+[IKeyPress,SHIFT,[IPress,Draw:Zadd]]
+[IKeyPress,SHIFT,[IUnPress,Draw:Rgb]]
 ]
