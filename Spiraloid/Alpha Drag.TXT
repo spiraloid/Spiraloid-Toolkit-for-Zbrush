@@ -1,0 +1,9 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 2018
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,2018]
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\AlphaDrag.ZBP"][IPress,Brush:Load Brush]
+[IPress,Spiraloid]
+[ISet,Draw:  Z Intensity,50]
+[ISet,Draw:  Z Intensity,55]
+]

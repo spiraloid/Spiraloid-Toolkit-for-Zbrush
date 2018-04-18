@@ -2,6 +2,8 @@
 [IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
 [IShowActions,0]
 [IConfig,4.8]
+[IFreeze,	
+
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render.ZLI"][IPress,Light:Load]
 [IPress,Render:Render Properties:AOcclusion]
@@ -13,4 +15,6 @@
 [ISet,Render:BPR Shadow:Res,512]
 [IPress,Tool:Polypaint:Colorize]
 [IPress,Render:Best]
+]//end freeze
+
 ]

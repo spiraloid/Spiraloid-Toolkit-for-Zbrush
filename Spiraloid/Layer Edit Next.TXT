@@ -64,6 +64,7 @@
 		[RoutineCall,ToggleRecord]
 	]
 
+	[IPress,Tool:Polypaint:Colorize]
 	
 ]//end freeze
 

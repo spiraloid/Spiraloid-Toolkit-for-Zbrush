@@ -1,0 +1,133 @@
+//3D Layer routines - code for ZBrush 3.1 by Marcus Civis November 2007
+[IConfig,3.1]
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+
+//*****variable declaration*******
+[VarDef,numberOfLayers,0]//number of layers
+[VarDef,tmpScrPos,0]//temp scroll bar position
+[VarDef,activeLayer,""]//active (or selected) layer
+[VarDef,activeScrPos,0]//scroll bar position for active layer
+[VarDef, layerFilePath, ""]// layer
+[VarDef, ExportFilePath, "C:/temp/obj/"]// export path	
+
+
+//**********routines******************************
+
+//****routine to check if 3D tool*****************
+[RoutineDef,Check3DTool,
+	[If,[IExists,Tool:SubTool:Append],
+	, // else
+		[Note,"Please Select a 3D Mesh",,2][Exit]
+	]	
+]
+
+
+//****routine to find the number of layers*****************
+[RoutineDef,GetLayers,
+	//temp store current scroll bar position
+	[VarSet,tmpScrPos,[IGetSecondary,Tool:Layers:Layers Scrollbar]]
+	//set scroll bar to a maximum to ensure it is at the top
+	[ISet,Tool:Layers:Layers Scrollbar,0,256]
+	//set initial value for layer number (this will be 0 for <=8 layers)
+	[VarSet,numberOfLayers,[IGetSecondary,Tool:Layers:Layers Scrollbar]]
+	[If,numberOfLayers > 0,//if initial value is >0, more than 8 layers
+		//if initial value = 1 then there are 9 layers (and so on) so:
+		[VarSet,numberOfLayers,numberOfLayers+8]
+		,//else number of layers 8 or less, so find number that are enabled:
+		[Loop,8,//loop through layers 0 - 7
+			[If,[IsEnabled,[StrMerge,"Tool:Layers:3D Layer ",[Val,n]]],
+				[VarInc,numberOfLayers]//add 1 to the layer number
+			,//else the layer is not enabled so exit
+				[LoopExit]
+			]
+		,n]
+	]
+	//return the scroll bar to its original position:
+	[ISet,Tool:Layers:Layers Scrollbar,0,tmpScrPos]
+	//print output:
+	[Note,[StrMerge,"Number of Layers : ",numberOfLayers],,1]
+]//end of routine
+
+
+//******test buttons********
+// to test, press Top Layer button first:
+
+[RoutineDef,SelectTopLayer,
+	[RoutineCall,GetLayers]	
+	[If,numberOfLayers,//if there are some layers
+		//set scroll bar at the top
+		[ISet,Tool:Layers:Layers Scrollbar,0,numberOfLayers-8]
+		//press top layer:
+		[VarSet,bWidth,[IWidth,323]]  
+    [IClick,323,bWidth-10,6]
+
+	]
+]
+
+[RoutineDef,ToggleLayers,//turn all layers on/off for subtool
+	[If,[IExists,Tool:Layers],
+		[RoutineCall,GetLayers]
+		[VarSet,bWidth,[IWidth,323]]  
+	  [VarSet,tmpSubD,[IGet,Tool:Geometry:SDiv]]
+	  [If,numberOfLayers > 0,
+	  	[ISet,Tool:Geometry:SDiv,[IGetMax,Tool:Geometry:SDiv]]
+	  ] 
+		[Loop,numberOfLayers,
+			[ISet,Tool:Layers:Layers Scrollbar,0,[Val,n]]	
+			[If,on,//turn on	
+				[If,([IModGet,323]&2 != 2),               
+		      [IClick,323,bWidth-10,6]
+		    ]
+	    ,//else turn off
+		    [If,(([IModGet,323]&2 == 2)||([IModGet,323]&1 == 1)),
+					[If,([IModGet,323]&1 == 1),[IClick,323,bWidth-10,6]]            
+	      	[IClick,323,bWidth-10,6]
+					[VarSet,currentLayerPath,[StrMerge,"Tool:Layers:",[IGetTitle,"Tool:Layers:Layer Intensity"]]]
+					[ISet,currentLayerPath,0]    
+	   		]	    	
+	 		]
+		,n]
+
+		[ISet,Tool:Geometry:SDiv,tmpSubD]
+		//[RoutineCall,SelectTopLayer]
+
+	]	
+,on]
+
+
+[RoutineDef,CycleLayers,// process all layers
+	[If,[IExists,Tool:Layers],
+		[RoutineCall,GetLayers]
+		[VarSet,bWidth,[IWidth,323]]  
+		[Loop,numberOfLayers,
+
+			[ISet,Tool:Layers:Layers Scrollbar,0,[Val,n]]
+
+			[IClick,323,bWidth-10,5]//toggle shown       
+			[VarSet,currentLayerPath,[StrMerge,"Tool:Layers:",[IGetTitle,"Tool:Layers:Layer Intensity"]]]
+			[ISet,currentLayerPath,1]
+			
+			[ISet, TOOL:Export:Grp, 0 ]
+			[VarSet, layerFilePathTmp, [StrMerge,ExportFilePath,[IGetTitle,"Tool:Layers:Layer Intensity"]]]	
+			[VarSet, layerFilePath, [StrMerge,layerFilePathTmp,".obj"]]	
+			[FileNameSetNext, layerFilePath] 
+			[IKeyPress, 13, [IPress, TOOL:Export:Export ]]
+			[Note, layerFilePath, , 2 ]
+		
+			[IClick,323,bWidth-10,5]//toggle shown       
+			[VarSet,currentLayerPath,[StrMerge,"Tool:Layers:",[IGetTitle,"Tool:Layers:Layer Intensity"]]]
+			[ISet,currentLayerPath,0]
+			
+		,n]
+		
+		[VarSet, layerFilePathTmp, [StrMerge,ExportFilePath,"zero"]]	
+		[VarSet, layerFilePath, [StrMerge,layerFilePathTmp,".obj"]]	
+		[FileNameSetNext, layerFilePath] 
+		[IKeyPress, 13, [IPress, TOOL:Export:Export ]]
+	]	
+]
+		
+[RoutineCall,ToggleLayers,0]
+[RoutineCall,CycleLayers]
+//[RoutineCall,ToggleLayers,0]
+]
