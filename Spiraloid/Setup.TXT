@@ -56,7 +56,7 @@
 [IPress,Preferences:Interface:RightClick Navigation]
 [IUnPress,Preferences:Interface:Enable RightClick Popup]
 [ISet,Document:Range,0]
-[ISet,Document:Back,59.23136]
+[ISet,Document:Back,50]
 
 
 ]

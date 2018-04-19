@@ -3,9 +3,10 @@
 [IShowActions,0]
 [IConfig,4.8]
 [IFreeze,	
-
+[IPress,Render:Flat]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Toon_Lighting_Render.ZLI"][IPress,Light:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Toon.ZMT"][IPress,Material:Load]
+[ISet,Document:Back,90]
 [IPress,Render:Best]
 ]//end freeze
 

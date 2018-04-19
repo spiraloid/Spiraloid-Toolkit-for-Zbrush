@@ -9,6 +9,6 @@
 [IPress,Render:Preview]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\MatCap MikeFlesh.ZMT"][IPress,Material:Load]
 [IUnPress,Tool:Polypaint:Colorize]
-
+[ISet,Document:Back,50]
 ]//end freeze
 ]

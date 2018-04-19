@@ -3,8 +3,11 @@
 [IShowActions,0]
 [IConfig,4.8]
 
+[IFreeze,	
+
 [IPress,Render:Flat]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [IPress,Tool:Polypaint:Colorize]
-
+[ISet,Document:Back,50]
+]//end freeze
 ]

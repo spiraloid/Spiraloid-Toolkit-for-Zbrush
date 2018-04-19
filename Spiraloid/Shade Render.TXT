@@ -3,7 +3,7 @@
 [IShowActions,0]
 [IConfig,4.8]
 [IFreeze,	
-
+[IPress,Render:Flat]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render.ZLI"][IPress,Light:Load]
 [IPress,Render:Render Properties:AOcclusion]
@@ -14,7 +14,9 @@
 [ISet,Render:BPR AO:Res,256]
 [ISet,Render:BPR Shadow:Res,512]
 [IPress,Tool:Polypaint:Colorize]
+[ISet,Document:Back,30]
 [IPress,Render:Best]
 ]//end freeze
+
 
 ]
