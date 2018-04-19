@@ -6,7 +6,6 @@
 [IPress,Render:Preview]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render.ZLI"][IPress,Light:Load]
-//[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render_BPR.ZLI"][IPress,Light:Load]
 
 [IPress,Render:Render Properties:AOcclusion]
 [ISet,Render:BPR AO:Rays,2]
@@ -29,24 +28,26 @@
 //[IPress,Render:ENVIRONMENT:Txtr]
 [IPress,Render:ENVIRONMENT:Environment Color]
 //[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\lightmap.hdr"][IPress,File:Texture:Import]
-[IPress,Render:BPR Filters:Filter]
 
-[IModSet,Render:BPR Filters:F1,1]
 
-[IModSet,Render:BPR Filters:F5,1]
-//[ISet,Render:BPR Filters:Glow,80]
-[ISet,Render:BPR Filters:Opacity,50]
-[ISet,Render:BPR Filters:Radius,20]
-[ISet,Render:BPR Filters:Int Exp,9]
-[ISet,Render:BPR Filters:Int,100]
 
-[ISet,Render:BPR RenderPass:SPix,1]
 [ISet,Render:ANTIALIASING:Size,8]
 [ISet,Render:ANTIALIASING:Super Sample,1]
 [ISet,Material:MODIFIERS:Ambient,5]
 
 
 [IPress,Render:Best]
+
+
+//[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render_BPR.ZLI"][IPress,Light:Load]
+//[IPress,Render:BPR Filters:Filter]
+//[IModSet,Render:BPR Filters:F5,1]
+////[ISet,Render:BPR Filters:Glow,80]
+//[ISet,Render:BPR Filters:Opacity,50]
+//[ISet,Render:BPR Filters:Radius,20]
+//[ISet,Render:BPR Filters:Int Exp,9]
+//[ISet,Render:BPR Filters:Int,100]
+//[ISet,Render:BPR RenderPass:SPix,1]
 //[IPress,Render:BPR RenderPass:Render Best Preview]
 
 
