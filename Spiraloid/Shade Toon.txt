@@ -6,8 +6,13 @@
 [IPress,Render:Flat]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Toon_Lighting_Render.ZLI"][IPress,Light:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Toon.ZMT"][IPress,Material:Load]
-[ISet,Document:Back,90]
-[IPress,Render:Best]
+[ISet,Document:Back,221.86665]
+[ISet,Render:ANTIALIASING:Edge,100]
+[ISet,Render:ANTIALIASING:Size,8]
+[ISet,Render:ANTIALIASING:Super Sample,4]
+
+[ISet,Material:Mixer:Depth,0.2]
 ]//end freeze
+[IPress,Render:Best]
 
 ]

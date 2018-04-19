@@ -8,7 +8,9 @@
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [IPress,Tool:Polypaint:Colorize]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting.ZLI"][IPress,Light:Load]
-[ISet,Document:Back,50]
+[ISet,Document:Back,42.1647]
+[ISet,Material:MODIFIERS:Ambient,25]
+
 ]//end freeze
 
 ]

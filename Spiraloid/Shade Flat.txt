@@ -8,6 +8,6 @@
 [IPress,Render:Flat]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [IPress,Tool:Polypaint:Colorize]
-[ISet,Document:Back,50]
+[ISet,Document:Back,42.1647]
 ]//end freeze
 ]

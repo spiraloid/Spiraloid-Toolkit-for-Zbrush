@@ -8,7 +8,7 @@
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Clay.ZMT"][IPress,Material:Load]
 [IUnPress,Tool:Polypaint:Colorize]
 [IColorSet,128,128,128]
-[ISet,Document:Back,50]
+[ISet,Document:Back,42.1647]
 ]//end freeze
 
 ]

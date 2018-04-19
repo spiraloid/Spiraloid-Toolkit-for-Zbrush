@@ -3,20 +3,55 @@
 [IShowActions,0]
 [IConfig,4.8]
 [IFreeze,	
-[IPress,Render:Flat]
+[IPress,Render:Preview]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Gray.ZMT"][IPress,Material:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render.ZLI"][IPress,Light:Load]
+//[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting_Render_BPR.ZLI"][IPress,Light:Load]
+
 [IPress,Render:Render Properties:AOcclusion]
-[IPress,Render:Render Properties:Shadows]
-[ISet,Render:BPR AO:Rays,16]
+[ISet,Render:BPR AO:Rays,2]
 [ISet,Render:BPR AO:Angle,180]
-[ISet,Render:BPR AO:Blur,15]
+[ISet,Render:BPR AO:Blur,3]
 [ISet,Render:BPR AO:Res,256]
-[ISet,Render:BPR Shadow:Res,512]
+[ISet,Render:BPR AO:GStrength,0.65]
+[ISet,Render:BPR AO:Max Dist,3.5]
+
+[IPress,Render:Render Properties:Shadows]
+[ISet,Render:BPR Shadow:Rays,16]
+[ISet,Render:BPR Shadow:Res,256]
+[ISet,Render:BPR Shadow:GStrength,0.8]
+[ISet,Render:BPR Shadow:Angle,45]
+[ISet,Render:BPR Shadow:Blur,1]
+
 [IPress,Tool:Polypaint:Colorize]
-[ISet,Document:Back,30]
+[ISet,Document:Back,42.1647]
+
+//[IPress,Render:ENVIRONMENT:Txtr]
+[IPress,Render:ENVIRONMENT:Environment Color]
+//[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\lightmap.hdr"][IPress,File:Texture:Import]
+[IPress,Render:BPR Filters:Filter]
+
+[IModSet,Render:BPR Filters:F1,1]
+
+[IModSet,Render:BPR Filters:F5,1]
+//[ISet,Render:BPR Filters:Glow,80]
+[ISet,Render:BPR Filters:Opacity,50]
+[ISet,Render:BPR Filters:Radius,20]
+[ISet,Render:BPR Filters:Int Exp,9]
+[ISet,Render:BPR Filters:Int,100]
+
+[ISet,Render:BPR RenderPass:SPix,1]
+[ISet,Render:ANTIALIASING:Size,8]
+[ISet,Render:ANTIALIASING:Super Sample,1]
+[ISet,Material:MODIFIERS:Ambient,5]
+
+
 [IPress,Render:Best]
+//[IPress,Render:BPR RenderPass:Render Best Preview]
+
+
 ]//end freeze
+
 
 
 ]

@@ -9,7 +9,7 @@
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting.ZLI"][IPress,Light:Load]
 [IUnPress,Tool:Polypaint:Colorize]
 [IColorSet,128,128,128]
-[ISet,Document:Back,50]
+[ISet,Document:Back,42.1647]
 ]//end freeze
 
 ]
