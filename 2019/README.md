@@ -84,9 +84,9 @@ left arrow: previous layer and enter record mode.  good for flipbook sculpting a
 
 right arrow: previous layer
 
-up arrow : toggle base edit vs target edit.
+up arrow : toggle base edit vs current layer sculpting.  beware changes to the base effect all layers. 
 
 ctrl c : copy shape (stores morph target)
 
-ctrl v : paste shape (switches current shape for stored morph target, activated paint morphtarget tool to paint back shape)
+ctrl v : paste shape (switches current shape for stored morph target, then activates the paint morphtarget brush to paint back to the stored shape)
 
