@@ -72,7 +72,7 @@ f : toggle wireframe
 
 7 : render w rimlights and AO
 
-f4 : automesh current subtool.  this remeshes to 1000K polygons, subdives 5 times then projects the shape and polytpaint from the original mesh before deleting it.  (hit yes to project and delete)
+f4 : automesh current subtool.  this remeshes to 1000K polygons, subdives 5 times then projects the shape and polytpaint from the original mesh before deleting it.  (hit yes to project and delete)  Sadly this has no UV's since I can't zscript or macro any plugins (like decimation master or fbx exporter).
 
 alt-s : smooths unmasked parts of the mesh.
 
