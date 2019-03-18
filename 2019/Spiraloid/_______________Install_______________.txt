@@ -3,9 +3,9 @@
 [IShowActions,0]
 [IConfig,4.8]
 
-[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\SpiraloidUI_4R8.cfg"][IPress,Preferences:Config:Load Ui]
-[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\SpiraloidUI_4R8_colors.cfg"][IPress,Preferences:IColors:Load Ui Colors]
-[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Hotkeys.txt"][IPress,Preferences:Hotkeys:Load]
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\SpiraloidUI_2019.cfg"][IPress,Preferences:Config:Load Ui]
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\SpiraloidUI_2019_colors.cfg"][IPress,Preferences:IColors:Load Ui Colors]
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Hotkeys_2019.txt"][IPress,Preferences:Hotkeys:Load]
 [FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_Lighting.ZLI"][IPress,Light:Load]
 
 
