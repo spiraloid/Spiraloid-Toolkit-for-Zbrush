@@ -2,7 +2,7 @@
 [IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
 [IShowActions,0]
 [IConfig,3.5]
-
+[IFreeze,	
 
 //choose standard brush
 [IPress,Brush:Standard]
@@ -28,7 +28,7 @@
 [ISet,Preferences:Tablet:Lazy Pressure,0.9]
 
 [ISet,Draw:Rgb Intensity,100]
-[ISet,Draw:Draw Size,8]
+[ISet,Draw:Draw Size,45]
 [ISet,Draw:Focal Shift,-100]
 
 [ISet,Alpha:Noise,0]
@@ -40,7 +40,6 @@
 [IPress,Stroke:LazyMouse]
 [ISet,Stroke:LazyStep,0.00816]
 [IPress,Stroke:Relative]
-[ISet,Stroke:LazyRadius,1]
 [ISet,Stroke:LazySmooth,16]
 [ISet,Stroke:Mouse Avg,1]
 
@@ -50,5 +49,27 @@
 [IKeyPress,SHIFT,[IUnPress,Draw:Zadd]]
 [IKeyPress,SHIFT,[IPress,Draw:Rgb]]
 
+[ISet,Stroke:LazyStep,0.00164]
+[ISet,Stroke:LazySnap,2]
+[ISet,Stroke:LazySmooth,2]
+[ISet,Preferences:Tablet:Lazy Pressure,0.82137]
+[ISet,Preferences:Tablet:Lazy Pressure,1]
+[ISet,Stroke:LazyRadius,12]
 
+[ISet,Stroke:Roll Dist,0.25]
+[IPress,Alpha:Alpha 28]
+
+[IUnPress,Brush:Tablet Pressure:Use Global Settings]
+[IClick,Brush:Tablet Pressure:RGB Intensity]
+[IPress,Brush:Tablet Pressure:RGB Intensity:Reset]
+[ISet,Brush:Tablet Pressure:RGB Intensity:Focal Shift,-100]
+[IClick,Brush:Tablet Pressure:Size]
+[IPress,Brush:Tablet Pressure:Size:Reset]
+[ISet,Brush:Tablet Pressure:Size:Focal Shift,62]
+[IStroke,Brush:Tablet Pressure:Size,(ZObjStrokeV02n31=H6V8EH6V8DH5V8DH4V8CH3V8CH2V8BH1V8BH1V8AHV89HV88H-1V88H-1V87H-1V86H-2V86H-2V85H-3V84H-3V83H-4V83H-5V82H-5V81H-5V80H-6V80H-7V81H-7V82H-7V83H-7V84H-7V85H-8V85H-8V86H-7V86H-7V86)]
+
+
+
+
+]
 ]

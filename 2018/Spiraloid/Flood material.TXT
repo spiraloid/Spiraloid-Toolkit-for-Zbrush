@@ -3,7 +3,10 @@
 [IShowActions,0]
 [IConfig,4.0]
 
+[IUnPress,Draw:Mrgb]
+[IUnPress,Draw:Rgb]
+[IUnPress,Draw:M]
+[IUnPress,Draw:Zadd]
 [IPress,Draw:M]
-[IunPress,Draw:Rgb]
 [IPress,Color:FillObject]
 ]

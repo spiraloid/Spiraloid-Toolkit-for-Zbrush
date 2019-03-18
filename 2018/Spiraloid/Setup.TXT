@@ -7,6 +7,8 @@
 [ISet,Movie:Overlay Image :Opacity,0]
 [ISet,Movie:Title Image :FadeIn Time,0]
 [ISet,Movie:Title Image :FadeOut Time,0]
+[ISet,Movie:Modifiers:SpinFrames,45]
+[IUnPress,Movie:Modifiers:Skip Menus]
 [IPress,Movie:TimeLapse]
 [IPress,Movie:Doc]
 
@@ -53,5 +55,9 @@
 // enable right click camera
 [IPress,Preferences:Interface:RightClick Navigation]
 [IUnPress,Preferences:Interface:Enable RightClick Popup]
+[ISet,Document:Range,0]
+[ISet,Document:Back,42.1647]
+
+[IUnPress,Menus]
 
 ]

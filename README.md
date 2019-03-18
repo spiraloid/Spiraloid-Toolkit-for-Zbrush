@@ -50,19 +50,27 @@ shift c : frames tool
 
 ctrl e : merges subtool down.
 
+ctrl f : flood color
+
 shift F :  toggles wireframe and solo at the same time. super useful for live boolean object editing.
+
+ctrl g : polygroup visible
 
 f : toggle wireframe
 
 1 : flat shade
 
-2 : preview render 
+2 : preview shade 
 
-3 : render 
+3 : skin shade 
 
 4 : clay shade 
 
 5 : pewter shade 
 
 6 : toon shade 
+
+7 : render w rimlights and AO
+
+
 
