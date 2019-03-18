@@ -1,7 +1,0 @@
-﻿//ZBRUSH MACRO - Recorded in ZBrush version 4.0
-[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
-[IShowActions,0]
-[IConfig,4.0]
-
-[IPress,Brush:MaskLasso]
-]

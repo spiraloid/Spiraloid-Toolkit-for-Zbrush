@@ -1,0 +1,21 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.8
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.8]
+
+[VarDef,x, 0]
+
+[If, x > 0
+,   // Then...
+	[IPress,Transform: Pf]
+	[IPress,Transform:Solo]
+	[VarSet,x, 0]
+
+,   // Else...
+	[IUnPress,Transform: Pf]
+	[IUnPress,Transform:Solo]
+	[VarSet,x, 1]
+]
+    
+
+]

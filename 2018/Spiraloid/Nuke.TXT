@@ -1,0 +1,19 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 3.5
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IPress,Draw:Mrgb]
+[ISet,Draw:Rgb Intensity,100]
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\SkinShade4.ZMT"][IPress,Material:Load]
+[IPress,Material:SkinShade4]
+[IPress,Color:FillObject]
+[IPress,Draw:Mrgb]
+[ISet,Color:R,128]
+[ISet,Color:G,128]
+[ISet,Color:B,128]
+[IPress,Color:FillObject]
+[IColorSet,0,0,0]
+[IPress,Color:SwitchColor]
+[IColorSet,128,128,128]
+[ISet,Material:MODIFIERS:AnisotropicSpecular,0]
+
+]

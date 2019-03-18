@@ -1,0 +1,19 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.7
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.7]
+[IUnPress,Transform:Activate Symmetry]
+[IPress,Tool:SubTool:Split Unmasked Points]
+[IPress,Tool:SubTool:SelectDown]
+[IPress,Tool:SubTool:MoveUp]
+[IPress,Tool:SubTool:Duplicate]
+[IPress,Tool:Polygroups:GroupVisible]
+[IModSet,Tool:Deformation:Mirror,4]
+[IPress,Tool:Deformation:Mirror]
+[IPress,Tool:Masking:Inverse]
+[IPress,Tool:SubTool:MoveUp]
+[IPress,Tool:SubTool:MergeDown]
+[IPress,Tool:SubTool:MergeDown]
+[IPress,Tool:Masking:Inverse]
+
+]
