@@ -1,5 +1,7 @@
 # Spiraloid-Toolkit-for-Zbrush
-Custom UI, hotkeys and colors for Zbrush 2019
+Custom UI, hotkeys and colors for Zbrush 2019.
+
+this makes me a lot faster and I never hit the zadd, zsub, m, rgb etc buttons because of it.  I like to bind right click for my mouse and stylus to "u".
 
 https://spiraloid.github.io/Spiraloid-Toolkit-for-Zbrush/
 
