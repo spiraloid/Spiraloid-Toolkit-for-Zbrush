@@ -1,7 +1,7 @@
 //ZBRUSH MACRO - Recorded in ZBrush version 4.8
-[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IButton,???,"Select the next layer and auto record.",
 [IShowActions,0]
-[IConfig,4.8]
+[IConfig,2019]
 [IFreeze,	
 [VarSet,currentLayerPath,[StrMerge,"Tool:Layers:",[IGetTitle,"Tool:Layers:Layer Intensity"]]]
 [ISet,currentLayerPath,0]
@@ -21,7 +21,8 @@
         //set Intensity to 1 for recording
         [ISet,Tool:Layers:Layer Intensity,1]               
         [IClick,layerPath,wid-28,5]//turn on recording
-        [IUnPress,Tool:Polypaint:Colorize]       
+        [IUnPress,Tool:Polypaint:Colorize] 
+              
         [VarSet,recOn,1]
     ,//else turn off record       
         [ISet,"Tool:Layers:Layer Intensity",0]           
@@ -64,7 +65,7 @@
 		[RoutineCall,ToggleRecord]
 	]
 
-	[IPress,Tool:Polypaint:Colorize]
+[IPress,Tool:Polypaint:Colorize]
 	
 ]//end freeze
 
