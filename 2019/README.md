@@ -1,5 +1,5 @@
 # Spiraloid-Toolkit-for-Zbrush
-Custom UI, hotkeys and colors for Zbrush 4R8
+Custom UI, hotkeys and colors for Zbrush 2019
 
 https://spiraloid.github.io/Spiraloid-Toolkit-for-Zbrush/
 
@@ -72,5 +72,17 @@ f : toggle wireframe
 
 7 : render w rimlights and AO
 
+f4 : automesh current subtool.  this remeshes to 1000K polygons, subdives 5 times then projects the shape and polytpaint from the original mesh before deleting it.  (hit yes to project and delete)
 
+alt-s : smooths unmasked parts of the mesh.
+
+shift f : toggles wireframe and solo together, usefull a live boolean invert with zmodeller.
+
+insert : add new layer, prompt for name, set to 1 and record.  *note every layername must be unique
+left arrow: previous layer and enter record mode.  good for flipbook sculpting animations or face shapes.
+right arrow: previous layer
+up arrow : toggle base edit vs target edit.
+
+ctrl c : copy shape (stores morph target)
+ctrl v : paste shape (switches current shape for stored morph target, activated paint morphtarget tool to paint back shape)
 
