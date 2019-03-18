@@ -79,10 +79,14 @@ alt-s : smooths unmasked parts of the mesh.
 shift f : toggles wireframe and solo together, usefull a live boolean invert with zmodeller.
 
 insert : add new layer, prompt for name, set to 1 and record.  *note every layername must be unique
+
 left arrow: previous layer and enter record mode.  good for flipbook sculpting animations or face shapes.
+
 right arrow: previous layer
+
 up arrow : toggle base edit vs target edit.
 
 ctrl c : copy shape (stores morph target)
+
 ctrl v : paste shape (switches current shape for stored morph target, activated paint morphtarget tool to paint back shape)
 
