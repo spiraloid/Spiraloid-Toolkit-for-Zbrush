@@ -78,7 +78,7 @@ alt-s : smooths unmasked parts of the mesh.
 
 shift f : toggles wireframe and solo together, usefull a live boolean invert with zmodeller.
 
-insert : add new layer, prompt for name, set to 1 and record.  *note every layername must be unique
+insert : add new layer, prompt for name, set to 1 and record.  *note every layername must be unique. if your arrow keys stopped working it's because two layers have the same name.  zscript limitation.
 
 left arrow: previous layer and enter record mode.  good for flipbook sculpting animations or face shapes.
 
