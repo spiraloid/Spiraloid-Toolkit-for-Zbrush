@@ -58,6 +58,8 @@ shift F :  toggles wireframe and solo at the same time. super useful for live bo
 
 ctrl g : polygroup visible
 
+ctrl shift g : split unmasked to new subtool
+
 f : toggle wireframe
 
 1 : flat shade
