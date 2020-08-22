@@ -1,0 +1,37 @@
+﻿//ZBRUSH MACRO - Recorded in ZBrush version 4.0
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+
+//select inflate tool
+[ISet,Draw:  Z Intensity,10]
+[IPress,Brush:Inflat]
+[IPress,Alpha:Alpha 06]
+[ISet,Alpha:Rf,0]
+[IModSet,Draw:Draw Size,0]
+
+
+
+//setup tablet preferences
+[ISet,Preferences:Tablet:Z Sensitivity,1]
+[ISet,Preferences:Tablet:Size Sensitivity,0]
+[ISet,Preferences:Tablet:Lazy Pressure,0.18]
+
+[ISet,Draw:Rgb Intensity,100]
+//[ISet,Draw:Focal Shift,0]
+//[ISet,Draw:Draw Size,100]
+
+[IPress,Stroke:FreeHand]
+[ISet,Stroke:Mouse Avg,1]
+
+[IPress,Brush:Tablet Pressure:Use Global Settings]
+
+//setup 
+[IUnPress,Draw:Mrgb]
+[IUnPress,Draw:Rgb]
+[IUnPress,Draw:M]
+[IPress,Draw:Zadd]
+
+
+[IKeyPress,SHIFT,[IPress,Draw:Zadd]]
+[IKeyPress,SHIFT,[IUnPress,Draw:Rgb]]
+
+]

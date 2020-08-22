@@ -1,0 +1,76 @@
+﻿//ZBRUSH MACRO - Recorded in ZBrush version 4.0
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.8]
+
+// setup timelapse
+[ISet,Movie:Overlay Image :Opacity,0]
+[ISet,Movie:Title Image :FadeIn Time,0]
+[ISet,Movie:Title Image :FadeOut Time,0]
+[ISet,Movie:Modifiers:SpinFrames,90]
+[IPress,Movie:TimeLapse]
+
+[IPress,Movie:Doc]
+
+// setup view
+[IPress,Transform:Rot Y]
+[IUnPress,Transform:Local Transform]
+[IUnPress,Draw:Floor]
+[IPress,Draw:Perspective]
+[IUnPress,Draw:Align To Object]
+[ISet,Draw:Angle Of View,135]
+
+
+// setup preview shadows
+//[ISet,Render:Preview Shadows :Slope,1.28571]
+//[ISet,Render:Preview Shadows :Length,16]
+//[ISet,Render:Preview Shadows :Depth,1.38888]
+[IUnPress,Render:Preview Shadows :DeepShadow]
+[IPress,Render:Preview]
+
+//setup SSS
+[IPress,Render:Bpr Sss:SSS Across Subtools]
+[IPress,Render:Bpr Sss]
+
+// setup keyshot render
+//[IPress,Render:External Renderer:Keyshot]
+//[IPress,Render:External Renderer:Send Document Color]
+//[IUnPress,Render:External Renderer:Auto Merge]
+
+[FileNameSetNext,"ZBRUSH_\ZStartup\Macros\Spiraloid\Rim_lighting.ZLI"][IPress,Light:Load]
+[IPress,Render:Render Properties:AOcclusion]
+
+
+// setup undo save off
+[IUnPress,File:UndoHistory]
+
+// turn on local symettry
+[IPress,Transform:LSym]
+
+[IPress,Render:Render Booleans:Live Boolean]
+
+// turn on constant depth picking for surface curves
+[IPress,Picker:Cont Z]
+
+// enable right click camera
+[IPress,Preferences:Interface:RightClick Navigation]
+[IUnPress,Preferences:Interface:Enable RightClick Popup]
+
+[ISet,Tool:Geometry:Max,72]
+[ISet,Tool:Geometry:Max,75]
+[ISet,Tool:Geometry:Min,100]
+[ISet,Tool:Geometry:Sharp,100]
+[ISet,Tool:Geometry:Soft,100]
+[ISet,Tool:Geometry:RSharp,30]
+[ISet,Tool:Geometry:RSoft,100]
+[ISet,Tool:Geometry:Edge,0]
+[ISet,Tool:Geometry:Edge,1]
+[ISet,Tool:Geometry:Surface,2]
+
+[IUnPress,Preferences:Thumbnail:T.Thumbnail]
+[IUnPress,Preferences:CamView:CamView On]
+[ISet,Preferences:Performance:QTransThreshold1,1]
+[ISet,Preferences:Performance:Auto Solo Mode,0.001]
+
+
+]

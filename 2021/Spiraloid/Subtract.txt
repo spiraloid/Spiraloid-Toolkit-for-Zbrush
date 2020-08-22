@@ -1,0 +1,10 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.8
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.8]
+[IPress,Tool:SubTool:Split Unmasked Points]
+[IPress,Tool:SubTool:SelectDown]
+[VarSet,subtoolPath,[StrMerge,"Tool:Subtool:",[IGetTitle,"Tool:Current Tool"]]]	
+[VarSet,wid,[IWidth,subtoolPath]]	
+[IClick,subtoolPath,wid-75,5] 
+]

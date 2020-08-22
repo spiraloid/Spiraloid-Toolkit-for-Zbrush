@@ -1,0 +1,32 @@
+﻿ //ZBRUSH MACRO - Recorded in ZBrush version 3.5
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,3.5]
+
+
+
+//select flatten tool
+[IPress,Brush:Standard]
+[ISet,Draw:  Z Intensity,10]
+[IPress,Brush:Flatten]
+[IModSet,Draw:Draw Size,0]
+
+
+
+[ISet,Preferences:Tablet:Z Sensitivity,5]
+[ISet,Preferences:Tablet:Size Sensitivity,0]
+
+[IPress,Brush:Tablet Pressure:Use Global Settings]
+
+
+[ISet,Draw:Focal Shift, 0]
+
+[IKeyPress,SHIFT,[IPress,Draw:Zadd]]
+[IKeyPress,SHIFT,[IUnPress,Draw:Rgb]]
+
+//setup 
+[IUnPress,Draw:Rgb]
+[IUnPress,Draw:M]
+[IPress,Draw:Zadd]
+
+]

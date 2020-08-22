@@ -1,0 +1,17 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 2019
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+	[IShowActions,0]
+	[IConfig,2019]
+	[IFreeze,
+		// Unwrap
+		[ISet,"Zplugin:Decimation Master:Use and Keep Polypaint", 0]
+		[ISet,"Zplugin:Decimation Master:Pre-process Current", 1]
+		[ISet,"Zplugin:Decimation Master:k Polys", 50]
+		[ISet,"Zplugin:UV Master:Symmetry", 1]
+		[ISet,"Zplugin:UV Master:Enable Control Painting",1]
+		[ISet,"Zplugin:UV Master:AttractFromAmbientOccl",1]
+		[ISet,"Zplugin:UV Master:Use Existing UV Seams",0]
+		
+		[IPress,"Zplugin:Decimation Master:Decimate Current"]
+	]
+]

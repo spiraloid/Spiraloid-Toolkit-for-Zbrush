@@ -1,0 +1,44 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.73
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.73]
+
+//choose standard brush
+[IPress,Brush:Standard]
+[ISet,Stroke:Mouse Avg,1]
+[IPress,Stroke:Dots]
+[IPress,Alpha:Alpha 39]
+[ISet,Preferences:Tablet:Lazy Pressure,0.7]
+[ISet,Preferences:Tablet:Size Sensitivity,0.5]
+
+//setup 
+[IUnPress,Draw:M]
+[IUnPress,Draw:Zadd]
+[IUnPress,Draw:Zsub]
+[IPress,Draw:Rgb]
+
+
+
+[IPress,Alpha:Alpha 48]
+[ISet,Preferences:Tablet:Color Sensitivity,1]
+[ISet,Preferences:Tablet:Size Sensitivity,.1]
+[ISet,Preferences:Tablet:Lazy Pressure,0]
+
+[ISet,Draw:Rgb Intensity,10]
+[ISet,Draw:Focal Shift,0]
+[ISet,Draw:Draw Size,100]
+
+[IPress,Stroke:Dots]
+
+[IPress,Brush:Tablet Pressure:Use Global Settings]
+
+
+// setup masks
+[ISet,Tool:Masking:Blur,3]
+[IPress,Tool:Masking:Cavity Profile:Reset]
+[ISet,Tool:Masking:Cavity Profile:Focal Shift,-95]
+[IPress,Tool:Masking:Mask By Cavity]
+[IPress,Tool:Masking:GrowMask]
+//[IPress,Tool:Masking:Inverse]
+[IUnPress,Tool:Masking:ViewMask]
+]
