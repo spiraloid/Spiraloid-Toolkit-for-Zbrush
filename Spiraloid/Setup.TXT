@@ -48,6 +48,12 @@
 [IPress,Transform:LSym]
 
 [IPress,Render:Render Booleans:Live Boolean]
+[IPress,Render:PREVIEW AO :a.Occlusion]
+[ISet,Render:PREVIEW AO :a.Quality,6]
+[ISet,Render:PREVIEW AO :a.Intensity,20]
+[ISet,Render:PREVIEW AO :a.Main Radius,40]
+[ISet,Render:PREVIEW AO :a.Radius Secondary,10]
+
 
 // turn on constant depth picking for surface curves
 [IPress,Picker:Cont Z]
