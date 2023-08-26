@@ -1,0 +1,8 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 2020
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,2020]
+[IPress,Tool:Polygroups:Additive]
+[ISet,Tool:Polygroups:Angle,179]
+[IPress,Tool:Polygroups:Group Front]
+]

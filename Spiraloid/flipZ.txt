@@ -1,0 +1,7 @@
+//ZBRUSH MACRO - Recorded in ZBrush version 4.7
+[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
+[IShowActions,0]
+[IConfig,4.7]
+[IModSet,Tool:Deformation:Mirror,4]
+[IPress,Tool:Deformation:Mirror]
+]

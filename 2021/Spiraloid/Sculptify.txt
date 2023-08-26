@@ -1,8 +1,0 @@
-//ZBRUSH MACRO - Recorded in ZBrush version 4.73
-[IButton,???,"Press to run this macro. Macros can be aborted by pressing the ëescí key.",
-[IShowActions,0]
-[IConfig,4.73]
-[IPress,Draw:Zadd]
-//[ISet,Preferences:Tablet:Z Sensitivity,0]
-//[ISet,Draw:Z Intensity,20]
-]
